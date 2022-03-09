@@ -10,7 +10,6 @@
   ```
   * {
       cursor:none;
-      overflow:hidden;
       pointer-events: none;
   }
   .flag {
@@ -19,9 +18,8 @@
       height:20px;
       border-radius: 50%;
       position: fixed;
-      transform: translate(-100%, -100%);
-      left: 50%;
-      top: 50%;
+      left: -100%;
+      top: -100%;
     }
   ```
   
@@ -44,7 +42,6 @@
 <style>
   * {
       cursor:none;
-      overflow:hidden;
       pointer-events: none;
   }
   .flag {
@@ -53,9 +50,8 @@
       height:20px;
       border-radius: 50%;
       position: fixed;
-      transform: translate(-100%, -100%);
-      left: 50%;
-      top: 50%;
+      left: -100%;
+      top: -100%;
     }
 </style>
 </head>
