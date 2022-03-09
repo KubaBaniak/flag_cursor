@@ -10,16 +10,18 @@
   ```
   * {
       cursor:none;
+      overflow:hidden;
+      pointer-events: none;
   }
   .flag {
       background: linear-gradient(#0057b7 50%, #ffd700 50%);
-      width:75px;
-      height:50px;
+      width:20px;
+      height:20px;
+      border-radius: 50%;
       position: fixed;
-      transform: translate(-50%, -50%);
+      transform: translate(-100%, -100%);
       left: 50%;
       top: 50%;
-      pointer-events: none;
     }
   ```
   
@@ -33,3 +35,47 @@
   })
 </script>
 ```
+
+#### Ostatecznie plik html powinien wyglądać jakoś tak:
+```
+<!DOCTYPE>
+<html>
+<head>
+<style>
+  * {
+      cursor:none;
+      overflow:hidden;
+      pointer-events: none;
+  }
+  .flag {
+      background: linear-gradient(#0057b7 50%, #ffd700 50%);
+      width:20px;
+      height:20px;
+      border-radius: 50%;
+      position: fixed;
+      transform: translate(-100%, -100%);
+      left: 50%;
+      top: 50%;
+    }
+</style>
+</head>
+
+<body>
+    <div class="flag"></div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1 style="text-align:center">Dużo siły i miłości dla Ukrainy! Jesteśmy z wami.</h1>
+</body>
+<script>
+  const cursor = document.querySelector('.flag');
+  document.addEventListener('mousemove', (e) => {
+    cursor.style.cssText = `left: ${e.clientX}px; top: ${e.clientY}px;`
+  })
+</script>
+</html>
+```
+
+
