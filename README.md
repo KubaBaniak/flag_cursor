@@ -6,7 +6,7 @@
   <div class="flag"></div>
   ```
   
-#### 2. W nagłówku **```<head> ... </head>```** dodajemy style do naszego "przyszłego" nowego kursora i ukrywamy stary:
+#### 2. W nagłówku **```<head> ... </head>```** dodajemy style do naszego "przyszłego" kursora i ukrywamy stary:
   ```
   * {
       cursor:none;
